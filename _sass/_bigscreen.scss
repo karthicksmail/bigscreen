@@ -2,12 +2,6 @@
   max-width: 100%;
 }
 
-.site-nav {
-  .page-link {
-    visibility: hidden;
-  }
-}
-
 .post {
   img.post-thumbnail {
     float:right;
@@ -21,6 +15,9 @@
 }
 
 @media print {
+  .site-nav {
+    visibility: hidden;
+  }
   .post-content {
     h2 {
       font-weight: bold;

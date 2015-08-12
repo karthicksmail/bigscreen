@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<style type="text/css">
+  .wrapper {
+    max-width: 100%;
+  }
+  .page-link {
+    visibility: hidden;
+  }
+</style>
+
+<div class="post">
+  <img src="{{ page.thumbnail }}" style="float:right"/>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y %H:%M" }}-{{ page.enddate | date: "%H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    <h2>{{ page.date | date: "%b %-d, %Y %H:%M" }}-{{ page.enddate | date: "%H:%M" }}</h2>
+    <h2>@ {{ page.location}}</h2>
+    {{ content }}
+  </article>
+
+  <script>
+    // setTimeout(function(){ document.location.reload(); }, 2000);
+  </script>
+
+
+</div>

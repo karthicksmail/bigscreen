@@ -11,7 +11,7 @@ layout: default
 </style>
 
 <div class="post">
-  <img src="{{ page.thumbnail }}" style="float:right"/>
+  <img src="{{ page.thumbnail | prepend: site.baseurl }}" style="float:right"/>
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>

@@ -3,8 +3,8 @@ title: Culture - Craftsmanship
 email: cherlim@paypal.com
 description: > # this means to ignore newlines until "baseurl:"
   Culture - Craftsmanship team - Lightning Talks, Greenbags, Brownbags, Code Retreat, Workshops
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost" # the base hostname & protocol for your site
+baseurl: "/bigscreen" # the subpath of your site, e.g. /blog/
+url: "https://chernjie.github.io" # the base hostname & protocol for your site
 twitter_username: chernjie
 github_username:  cherlim
 

@@ -1,9 +1,9 @@
 ---
-layout: bigscreen
+layout: post
 title:  "Intellectual Property Issues in 3D Printing"
 date:   2015-08-13 13:30:00 SGT
 enddate:   2015-08-13 14:30:00 SGT
-categories: bigscreen
+categories: greenbag
 author: Wan Li Seow and Byron Xavier
 meta: Xavier & Associates LLC
 location: Thanksgiving / Obon

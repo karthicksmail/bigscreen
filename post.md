@@ -1,10 +1,12 @@
 ---
-layout: default
+layout: page
+title: Events
+permalink: /events/
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Events</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}

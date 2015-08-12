@@ -1,0 +1,37 @@
+.wrapper {
+  max-width: 100%;
+}
+
+.site-nav {
+  .page-link {
+    visibility: hidden;
+  }
+}
+
+.post {
+  img.post-thumbnail {
+    float:right;
+  }
+  .post-content {
+    font-size: 18px;
+    blockquote {
+      font-size: 0.75em;
+    }
+  }
+}
+
+@media print {
+  .post-content {
+    h2 {
+      font-weight: bold;
+      float: left;
+      padding: 0.4em;
+    }
+    img.post-thumbnail {
+      width: 20em;
+    }
+  }
+  footer {
+    display: none;
+  }
+}

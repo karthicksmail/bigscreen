@@ -8,6 +8,28 @@ layout: default
   .page-link {
     visibility: hidden;
   }
+  img.post-thumbnail {
+    float:right;
+  }
+  .post-content {
+    font-size: 18px;
+  }
+  .page-content blockquote {
+    font-size: 0.75em;
+  }
+  @media print {
+    .page-content h2 {
+      font-weight: bold;
+      float: left;
+      padding: 0.4em;
+    }
+    img.post-thumbnail {
+      width: 20em;
+    }
+    footer {
+      display: none;
+    }
+  }
 </style>
 
 <div class="post">
@@ -16,11 +38,14 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y %H:%M" }}-{{ page.enddate | date: "%H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <img src="{{ page.thumbnail | prepend: site.baseurl }}" style="float:right"/>
 
   <article class="post-content">
-    <h2>{{ page.date | date: "%b %-d, %Y %H:%M" }}-{{ page.enddate | date: "%H:%M" }}</h2>
-    <h2>@ {{ page.location}}</h2>
+    <img src="{{ page.thumbnail | prepend: site.baseurl }}" class="post-thumbnail"/>
+    <h2>
+      {{ page.date | date: "%b %-d, %Y %H:%M" }}-{{ page.enddate | date: "%H:%M" }}
+      <br/>
+      @ {{ page.location}}
+    </h2>
     {{ content }}
   </article>
 
